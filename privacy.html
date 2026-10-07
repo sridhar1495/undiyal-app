@@ -68,6 +68,9 @@ The developer does not receive your card or bank details.</p>
 <h2>Information collected by Google Play</h2>
 <p>Like every app on Google Play, Google may collect technical information such as installs, crashes and app performance, according to
 your device settings and Google's own privacy policy. This is done by Google Play, not by Undiyal.</p>
+<p>The Google Play billing library inside the app (made by Google, needed to sell Premium and tips) connects to Google Play to check
+prices and purchases, and may send Google technical information about how billing is working, such as errors. This is handled by
+Google under its privacy policy. Undiyal's own code never uses the internet, and none of your records are sent.</p>
 
 <h2>Permissions the app uses</h2>
 <ul>
@@ -75,6 +78,8 @@ your device settings and Google's own privacy policy. This is done by Google Pla
   <li><strong>Start after restart</strong>: to set your reminders again after the phone restarts.</li>
   <li><strong>Fingerprint or face</strong>: only if you turn on fingerprint unlock for the app lock.</li>
   <li><strong>Google Play billing</strong>: to buy Premium or leave a tip through Google Play.</li>
+  <li><strong>Internet and network state</strong>: added by Google's billing library and Android's background-work library, so they
+      can reach Google Play and wait for a connection. Undiyal itself sends nothing over the internet.</li>
   <li>Standard background-work permissions added by Android's libraries (for example keeping the phone awake briefly while a backup
       is being written). None of them gives the app access to your contacts, location, camera, microphone or messages.</li>
 </ul>
